@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\gpio.o"
+".\objects\gpio_isr.o"
+".\objects\main.o"
+".\objects\softtimer.o"
+".\objects\lpuart.o"
+".\objects\spi.o"
+".\objects\startup.o"
+".\objects\startup_s32k144.o"
+".\objects\system_s32k144.o"
+--strict --scatter "C:\Users\khanh\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.5.0\platform\devices\S32K144\linker\armc\S32K144_64_flash.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\GPIO_ASSIGNMENT.map" -o .\Objects\GPIO_ASSIGNMENT.axf
